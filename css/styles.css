@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: "Lora", serif;
+    text-align: center;
+}
+#inicio{
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+nav input, label{  
+    display: none;
+}
+nav .caja-madre{
+    width: 85%;
+    margin: auto;
+    
+}
+nav .logo{
+    width: 10%;
+}
+
+nav .items{
+    width: 85%;
+}
+nav .logo, .items{
+    display: inline-block;
+    
+}
+nav{
+    display: flex;
+    background-color: rgb(51, 0, 51 );
+    position: relative;
+    z-index: 1000;
+    width: 100%; 
+}
+nav .lista-1{
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+}
+nav .lista-1 li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1em;
+    display: inline-block;
+    transition: all .3s ease 0s;
+}
+nav .lista-1 li:hover{
+    background-color: rgba(67, 0, 112, 0.87);
+    
+}
+nav .logo p{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+}
+nav .despliegue{
+    position: relative;
+} 
+nav .lista-2{
+    display: none;
+    position: absolute;
+    margin-top: 1em;
+}
+nav .lista-2 > li{
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: 1px rgba(97, 0, 161, 0.87) solid;
+    text-align: left;
+    background-color:  rgba(51, 0, 51, 0.781);
+    font-family: "Lora", serif;
+}
+nav .lista-2 > li:hover{
+    background-color: rgba(67, 0, 112, 0.87);
+}
+nav .despliegue:hover > .lista-2{
+    display: block;
+}
+
+
+header .col {
+    position: relative;
+    border: red ;   
+}
+header .col img{
+    width: 100%;
+    height: 500px;
+}
+header .row-texto {
+    position: absolute;
+    top: 140px; /* Ajusta la posición vertical del texto */
+    left: 60px; /* Ajusta la posición horizontal del texto */
+    border: red ;
+}
+header .row-texto .col-texto{
+    margin-bottom: 1em;
+}
+header .row-texto .col-texto h2{
+    text-align: left;
+    color: white;
+    font-size: 3em;
+}
+
+#muestra .col img{
+    max-width: 100%;
+    height: 300px;
+}
+
+#footer{
+    background-color: black;
+}
+#footer .row1{
+    width: 90%;
+    margin: auto;
+    padding: 1em 0em;
+    border-bottom: white solid;
+}
+#footer .row1 .colum1 p, h3 {
+    text-align: left;
+    margin: 1em 0em;
+    color: white;
+}
+#footer .colum1 h3{
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#footer .colum1 i{
+    color: yellow;
+    padding: 0em 1em;
+    font-size: 1.2em;
+}
+#footer span{
+    color: yellow;
+}
+
+
+
+
+#libros{
+    padding: 2em 0em;
+}
+#libros .row-titulo{
+    width: 80%;
+    margin: 3em auto;
+    border: red ;
+}
+#libros h1{
+    font-size: 1.7em;
+    text-align: center;
+}
+#libros .row-padre, #descripcion-libros .fila, #autores .fila, #muestra .fila{
+    width: 80%;
+    margin: 2.5em auto;
+    border: black ;
+}
+#libros .col-madre, #muestra .col{
+    width: 20%;
+    display: inline-block;
+    border: red;
+    vertical-align: top;
+    margin-left: 25px;
+   
+}
+
+#libros .col img { 
+    max-width: 100%;
+    height: 200px;
+    box-shadow: 0 1.5rem 3rem -0.75rem black;
+    
+}
+#libros .col-info{
+    margin-top: 1em;
+}
+#libros .hola:hover {
+    scale: 1.12;
+    transition: all .3s ease 0s;
+}
+#libros .nom-libro{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000533
+}
+#libros .activado{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000533;
+    border-bottom: blue solid;
+    
+}
+#libros p{
+    margin-top: 0.3em;
+}
+
+#descripcion-libros{
+    padding: 3em 0em;
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#descripcion-libros .fila{
+    padding: 3em 0;
+    background: rgba(255, 255, 255, 0.178);
+}
+#descripcion-libros .col-img{
+    width: 30%;
+    vertical-align: top;
+}
+#descripcion-libros .col-img img{
+    max-width: 100%;
+    height: 400px;
+    box-shadow: 0 1.5rem 3rem -0.75rem black;
+}
+#descripcion-libros .col-texto{
+    width: 60%;
+    text-align: left;
+}
+#descripcion-libros .col-texto h1, h2, .texto-descripcion{
+    margin-top: 0.5em;
+}
+#descripcion-libros i{
+    font-size: 1.3em;
+    margin: 0.5em 0em;
+}
+#descripcion-libros .col-texto h2{
+    margin-top: 1.5em;
+}
+#descripcion-libros .col-texto h1{
+    font-size: 2.5em;
+}
+#descripcion-libros .activado{
+    font-weight: bold;
+}
+#descripcion-libros {
+    font-family: "Roboto", sans-serif;
+}
+#descripcion-libros .col-texto button{
+    margin: 1.5em 0em;
+    padding: 1em;
+    background: linear-gradient(90deg,yellow,orange,orangered);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+#descripcion-libros .col{ 
+    display: inline-block;
+    margin-inline: 0.5em;
+    border: red;
+}
+#descripcion-libros .fila2{
+    width: 92%;
+    margin: 1.2em auto;
+    text-align: left;
+}
+ 
+
+#autores{
+    padding: 2em 0em;
+}
+#autores .fila{
+    border: black ;
+    padding: 1em 0em;
+    border-bottom:gray solid;
+}
+#autores .img-autor{
+    width: 40%;
+}
+#autores .texto-autor{
+    width: 50%;
+    padding-top: 3.7em;
+    vertical-align: top;
+}
+#autores .texto-autor p, h2{
+    text-align: left;
+    margin: 0.5em 0em;
+}
+#autores .texto-autor h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#autores .col{
+    display: inline-block;
+    text-align: center;
+    border: red ;
+}
+#autores .img-autor img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: 300px;
+}
+#autores .fila-especial{
+    display: flex;
+    text-align: center;
+}
+.columna1{
+    flex: 1;
+    order: 2;
+}
+.columna2{
+    flex: 1;
+    order: 2;
+}
+
+
+@media screen and (min-width:600px) and (max-width:900px){
+    header h2{
+        display: none;
+    }
+    #muestra .col{
+        width: 40%;
+        margin: 0.5em 0em;
+    }
+    #libros .row-padre{
+        width: 100%;
+    }
+    #libros .col-madre{
+        width: 40%;
+        border: red ;
+    }
+    #libros .col-tablet{
+        margin-top: 2.5em;
+    }
+    .columna1{
+        order: 2;
+    }
+    .columna2{
+        order: 1;
+    }
+    #autores .img-autor img{
+        border-radius: 50%;
+        max-width: 100%;
+        height: 200px;
+    
+    }
+    #autores .texto-autor{
+        width: 50%;
+        padding-top: 1em;  
+    }
+   
+    #descripcion-libros .col{ 
+        width: 100%;
+        padding: 1em;
+        border: red;
+    }
+    #descripcion-libros .col img{
+        height: 300px;
+    }
+    #descripcion-libros .col-texto h2{
+        margin-top: 1.2em;
+    }
+    #descripcion-libros .col-texto h1{
+        font-size: 2.5em;
+    }
+    
+}
+
+@media screen and (max-width:601px) {
+    #muestra .col{
+        width: 100%;
+        margin: 0.5em 0em;
+    }
+    #libros .col-celular{
+        margin-top: 2.5em;
+    }
+
+    #libros .row-padre{
+        width: 100%;
+    }
+    #libros .col-madre{
+        width: 100%;
+    }
+    #autores .col{
+        width: 100%;
+        border:red ;
+    }
+    #descripcion-libros .col{ 
+        width: 100%;
+        padding: 1em;
+        border: red;
+    }
+    #descripcion-libros .col img{
+        height: 300px;
+    }
+    #descripcion-libros .col-texto h2{
+        margin-top: 1em;
+    }
+    #descripcion-libros .col-texto h1{
+        font-size: 2em;
+    }
+   
+}
+
+
+
